@@ -3,11 +3,11 @@ body {
     margin: 0;
     padding: 0;
     /* Remove this line or change it as needed */
-    scroll-behavior: smooth;
 
 }
 .first{
     overflow: hidden;
+    scroll-behavior: smooth;
 }
 
 nav {
@@ -262,9 +262,10 @@ nav a:hover {
 }
 
 #four img {
-    max-width: 100%; /* Ensure images stay within their container */
+    width: 80%; /* Ensure images stay within their container */
     height: auto; /* Maintain aspect ratio */
-    margin-left: 8%;
+    margin-left: 20%;
+    margin-top: 5%;
     transition: transform 0.3s ease;
 }
 
@@ -274,6 +275,8 @@ nav a:hover {
 
 .four-content {
     margin-top: 10%;
+    margin-left: auto;
+    margin-right: auto;
     margin-left: 10%;
 }
 
