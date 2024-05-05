@@ -1,12 +1,3 @@
-const toggleButton = document.getElementById('toggle-menu');
-const navLinks = document.getElementById('nav-links');
-
-toggleButton.addEventListener('click', () => {
-    navLinks.classList.toggle('active');
-});
-
-
-
 let slideIndex = 1;
 showSlides(slideIndex);
 
@@ -54,5 +45,3 @@ window.onload = startSlideInterval;
 document.querySelectorAll('.prev, .next, .dot').forEach(function (element) {
     element.addEventListener('click', stopSlideInterval);
 });
-
-
