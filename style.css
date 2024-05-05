@@ -1,0 +1,185 @@
+body {
+    background-color: white;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    scroll-behavior: smooth;
+}
+
+nav {
+    position: relative;
+    margin: 0 auto;
+    /* Center the navbar horizontally */
+    padding: 0;
+    background-color: white;
+    text-align: center;
+    /* Center align the inline elements */
+    width: 100%;
+    /* Ensure navbar spans the full width */
+}
+
+nav ul li ul li:hover {
+    background: white;
+}
+
+/* Background color change on Hover */
+nav a:hover {
+    background-color: #98C0D8;
+}
+
+
+#logo {
+    display: inline-block;
+    /* Display the logo inline */
+    text-align: left;
+    vertical-align: middle;
+
+}
+
+#logo img {
+    width: 45%;
+    margin-top: 5%;
+}
+
+.menu {
+    display: inline-block;
+    /* Display the menu inline */
+    vertical-align: middle;
+    /* Align the menu vertically */
+    margin: 0;
+    /* Remove margin to avoid unwanted spacing */
+    padding: 0;
+    /* Remove padding */
+    font-size: 14px;
+    position: relative;
+
+}
+
+.menu li {
+    display: flex;
+    display: inline-block;
+    /* Display menu items inline */
+    margin-right: 20px;
+    /* Add spacing between menu items */
+}
+
+.menu li:last-child {
+    margin-right: 0;
+    /* Remove right margin from the last menu item */
+}
+
+.menu a {
+    display: block;
+    /* Make menu items block-level for better styling */
+    padding: 14px 20px;
+    /* Add padding to menu items */
+    color: black;
+    text-decoration: none;
+}
+
+/* Dropdown styles */
+.menu ul {
+    display: none;
+    position: absolute;
+    background-color: #293340;
+    padding: 0;
+    width: max-content;
+    text-align: left;
+
+}
+
+.menu ul li {
+    display: block;
+    width: 100%;
+
+}
+
+.menu li:hover ul {
+
+    display: block;
+    color: white;
+
+}
+
+.menu ul li a {
+    padding: 10px 20px;
+    color: white;
+
+}
+
+
+  .nav-toggle {
+    display: none;
+    position: absolute;
+    cursor: pointer;
+    z-index: 999;
+    /* Adjust the value as needed */
+     top: 50%;
+    right: 20px; 
+    transform: translateY(-50%);  
+ 
+  }
+
+.socials {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    right: 2%;
+    /* Adjust as needed */
+    top: 50%;
+    /* Align icons vertically */
+    transform: translateY(-50%);
+    font-size: 20px;
+}
+
+#main {
+    text-decoration: none;
+    text-align: center;
+    margin-top: 50px;
+    color: #000000;
+
+}
+
+#main h2 {
+    color: #2e363A;
+    font-family: poppins, sans-serif;
+    font-size: 25px;
+}
+
+#main h4 {
+    color: #2e363A;
+    font-family: poppins, sans-serif;
+    font-size: 15px;
+}
+
+#main p {
+    color: #6F6b6b;
+    font-family: poppins, sans-serif;
+    font-size: 14px;
+}
+
+#header .icon {
+    font-size: 25px;
+    margin-right: 10px;
+}
+
+
+.btn {
+    margin-top: 3rem;
+}
+
+.btn .btn {
+    padding: 1rem 2rem;
+    border-radius: 0.3em;
+    transition: 0.3s;
+    color: #fff;
+    background: #EA8537;
+    font-family: Roboto, sans-serif;
+    text-decoration: none;
+}
+
+.btn:hover {
+    background: #3A526A;
+
+}

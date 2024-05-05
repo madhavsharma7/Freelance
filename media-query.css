@@ -1,0 +1,42 @@
+@media screen and (max-width: 991px) {
+
+    .socials {
+        display: none;
+    }
+
+     .nav-toggle {
+        display: block;   
+
+        margin-right: 20px;
+        
+    }
+
+    .menu {
+        
+        display: flex;
+        position: absolute;
+        background-color: #FFD0D0;
+        right: -80%;
+        top: 4.9rem;
+        width: 40%;
+        padding-block: 20px;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        
+    }
+    .menu.active{
+        right: 0;
+    }
+
+    .logo img {
+        margin-left: 10px;
+    }
+
+    .menu ul {
+        flex-direction: column;
+        position: static;
+    }
+}
