@@ -88,13 +88,32 @@
 
     }
 
+}
 
+
+@keyframes slideText {
+    0% { left: -200px; }
+    100% { left: 30%; } /* Final position on the screen */
+}
+
+.text-overlay h1, .text-overlay h4 {
+    margin: 0;
+    color: white;
+}
+
+.text-overlay h1 {
+    font-size: 50px; /* Increase font size for laptop screens */
+}
+
+.text-overlay h4 {
+    font-size: 30px; /* Increase font size for laptop screens */
+    text-align: center;
 }
 
 
 /* Carousel */
 
-@keyframes fade {
+/* @keyframes fade {
     from {
         opacity: 0.4;
     }
@@ -102,7 +121,7 @@
     to {
         opacity: 1;
     }
-}
+} */
 
 /* On smaller screens, decrease text size */
 @media only screen and (max-width: 991px) {
@@ -118,4 +137,7 @@
         width: 100%;
         height: 85vh;
     }
+
+    
+
 }

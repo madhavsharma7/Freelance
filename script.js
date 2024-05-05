@@ -1,3 +1,5 @@
+// Navbar menu
+
 const toggleButton = document.getElementById('toggle-menu');
 const navLinks = document.getElementById('nav-links');
 
@@ -5,7 +7,7 @@ toggleButton.addEventListener('click', () => {
     navLinks.classList.toggle('active');
 });
 
-
+//Carousel 
 
 let slideIndex = 1;
 showSlides(slideIndex);
@@ -24,7 +26,7 @@ function stopSlideInterval() {
 }
 
 function plusSlides(n) {
-    showSlides(slideIndex += n);
+    showSlides(slideIndex -= n);
 }
 
 function currentSlide(n) {

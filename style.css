@@ -217,6 +217,10 @@ nav a:hover {
     user-select: none;
 }
 
+.prev {
+    left: 0;
+    border-radius: 3px 0 0 3px;
+}
 /* Position the "next button" to the right */
 .next {
     right: 0;
@@ -247,10 +251,10 @@ nav a:hover {
 }
 
 /* Fading animation */
-.fade {
+/* .fade {
     animation-name: fade;
     animation-duration: 1.5s;
-}
+} */
 
 /* 4 Part image */
 #four {
@@ -286,4 +290,21 @@ nav a:hover {
     grid-template-rows: auto; /* Adjust as needed */
     grid-gap: 10px; /* Adjust as needed */
     max-width: 100%; /* Ensures content wrapper doesn't overflow */
+}
+
+
+/* Text in front of carousel */
+.container {
+    position: relative;
+    width: 100%;
+    height: 83vh; /* Adjust height as needed */
+}
+
+.text-overlay {
+    position: absolute;
+    top: 50%;
+    left: -200px; /* Initial position off the screen */
+    transform: translateY(-50%);
+    z-index: 1; /* Place in front of carousel */
+    animation: slideText 2s forwards; /* Animation to slide from left to right */
 }
