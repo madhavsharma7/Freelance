@@ -6,7 +6,6 @@
 
     .nav-toggle {
         display: block;
-
         margin-right: 20px;
 
     }
@@ -15,7 +14,7 @@
 
         display: flex;
         position: absolute;
-        background-color: #FFD0D0;
+        background-color: #FB6D48;
         right: -80%;
         top: 4.9rem;
         width: 40%;
@@ -28,6 +27,8 @@
 
     }
 
+
+
     .menu.active {
         right: 0;
     }
@@ -39,7 +40,28 @@
     .menu ul {
         flex-direction: column;
         position: static;
+        text-align: left;
     }
+
+
+    .slideshow-container,
+    .content-wrapper {
+        height: auto;
+        max-height: none;
+    }
+    .prev,
+    .next {
+        font-size: 14px; /* Adjust button size for mobile */
+    }
+
+    .btn{
+        width: 100px;
+        margin-left: 42%;
+    }
+
+
+
+
 }
 
 
@@ -47,20 +69,25 @@
 
 @keyframes fade {
     from {
-        opacity: .4
+        opacity: 0.4;
     }
 
     to {
-        opacity: 1
+        opacity: 1;
     }
 }
 
 /* On smaller screens, decrease text size */
- @media only screen and (max-width: 300px) {
-
+@media only screen and (max-width: 991px) {
     .prev,
     .next,
     .text {
-        font-size: 11px;
+        font-size: 20px;
+
+    }
+    .slideshow-container{
+        width:100%;
+        height: 85vh;
     }
 }
+

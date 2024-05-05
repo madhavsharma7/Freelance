@@ -2,8 +2,12 @@ body {
     background-color: white;
     margin: 0;
     padding: 0;
-    /* overflow: hidden; */ /* Remove this line or change it as needed */
+    /* Remove this line or change it as needed */
     scroll-behavior: smooth;
+
+}
+.first{
+    overflow: hidden;
 }
 
 nav {
@@ -154,18 +158,21 @@ nav a:hover {
     margin-right: 10px;
 }
 
-.btn {
-    margin-top: 3rem;
+.btn a {
+    text-decoration: none;
+    color: white;
 }
 
-.btn .btn {
-    padding: 1rem 2rem;
+.btn {
+    margin-left: 46.1%;
+    margin-top: 2rem;
+    width: 6%;
+    padding: 1rem 1rem;
     border-radius: 0.3em;
     transition: 0.3s;
-    color: #fff;
     background: #EA8537;
     font-family: Roboto, sans-serif;
-    text-decoration: none;
+
 }
 
 .btn:hover {
@@ -243,4 +250,37 @@ nav a:hover {
 .fade {
     animation-name: fade;
     animation-duration: 1.5s;
+}
+
+/* 4 Part image */
+#four {
+    display: grid;
+    grid-template-columns: auto 1fr; /* Adjust as needed */
+    grid-column-gap: 10px; /* Adjust as needed */
+    align-items: start;
+    max-width: 100%; /* Ensures the image grid doesn't overflow */
+}
+
+#four img {
+    max-width: 100%; /* Ensure images stay within their container */
+    height: auto; /* Maintain aspect ratio */
+    margin-left: 8%;
+    transition: transform 0.3s ease;
+}
+
+#four img:hover {
+    transform: scale(1.1); /* Increase the size on hover */
+}
+
+.four-content {
+    margin-top: 10%;
+    margin-left: 10%;
+}
+
+.content-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr)); /* Adjust as needed */
+    grid-template-rows: auto; /* Adjust as needed */
+    grid-gap: 10px; /* Adjust as needed */
+    max-width: 100%; /* Ensures content wrapper doesn't overflow */
 }
