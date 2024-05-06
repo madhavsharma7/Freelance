@@ -448,3 +448,33 @@ nav a:hover {
     grid-column: 1 / 4; /* Span from the fourth column to the end */
 }
 
+
+.footer {
+    margin-top: 3%;
+    display: grid;
+    background-color: lightgray;
+    grid-template-columns: repeat(3, 1fr); /* Three equal columns */
+    gap: 20px; /* Adjust the gap between partitions */
+}
+
+.footer-partition {
+    margin-left: 10%;
+    padding: 5px; /* Add padding to each partition */
+    /* Add borders for better separation */
+    border-radius: 5px; /* Add border radius for rounded corners */
+    text-align: center;
+
+}
+
+.footer-partition p {
+    margin: 1.5%; /* Remove default margin for paragraphs */
+}
+
+.copyright{
+    width: 100%;
+    background-color: #7ca4cd;
+    padding: 1.5px;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
