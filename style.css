@@ -353,20 +353,26 @@ nav a:hover {
 }
 
 .fouth-content h2 {
-    text-align: center; /* Center text horizontally */
-    height: 10vh; /* Adjust as needed */
-    display: flex; /* Use flexbox */
-    justify-content: center; /* Center horizontally */
-    align-items: center; /* Center verticall */
+    text-align: center;
+    /* Center text horizontally */
+    height: 10vh;
+    /* Adjust as needed */
+    display: flex;
+    /* Use flexbox */
+    justify-content: center;
+    /* Center horizontally */
+    align-items: center;
+    /* Center verticall */
 }
 
 
-.grid-container{
+.grid-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 20px; /* Adjust spacing between grid items */
+    gap: 20px;
+    /* Adjust spacing between grid items */
     margin-left: 50px;
-   
+
 
 }
 
@@ -374,18 +380,71 @@ nav a:hover {
 .three-part {
     display: flex;
     flex-direction: column;
-    align-items: center; /* Center items horizontally */
+    align-items: center;
+    /* Center items horizontally */
 
-} 
+}
 
 /* Style for images */
 .three-part img {
-    height: 40%; /* Adjust image height as needed */
-    max-width: 100%; /* Ensure images don't exceed container width */
+    height: 40%;
+    /* Adjust image height as needed */
+    max-width: 100%;
+    /* Ensure images don't exceed container width */
 
 }
 
 .three-part {
-justify-content: center;
+    justify-content: center;
 
 }
+
+.last img {
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 4%;
+}
+
+.last p {
+    margin-left: 10%;
+  
+
+}
+
+.container4{
+    display: flex;
+}
+
+#grid-container2 {
+    display: grid;
+    grid-template-columns: repeat(3, auto) 1fr; /* Three link sections and one main content section */
+    gap: 100px; /* Adjust gap between sections as needed */
+    margin-left: 12%;
+    justify-content: center;
+
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+  
+}
+
+.links a{
+    text-decoration: none;
+    margin-top: 10%;
+    color: #000000;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+.links:nth-child(2) a {
+    margin-bottom: 40px; /* Add space between social media icons */
+}
+.last {
+    display: flex;
+    flex-direction: column;
+    grid-column: 1 / 4; /* Span from the fourth column to the end */
+}
+
