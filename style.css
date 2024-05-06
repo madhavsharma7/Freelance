@@ -351,3 +351,41 @@ nav a:hover {
     text-align: center;
 
 }
+
+.fouth-content h2 {
+    text-align: center; /* Center text horizontally */
+    height: 10vh; /* Adjust as needed */
+    display: flex; /* Use flexbox */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center verticall */
+}
+
+
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px; /* Adjust spacing between grid items */
+    margin-left: 50px;
+   
+
+}
+
+
+.three-part {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center items horizontally */
+
+} 
+
+/* Style for images */
+.three-part img {
+    height: 40%; /* Adjust image height as needed */
+    max-width: 100%; /* Ensure images don't exceed container width */
+
+}
+
+.three-part {
+justify-content: center;
+
+}
