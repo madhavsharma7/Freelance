@@ -82,7 +82,11 @@
         margin-left: -60%;
         grid-template-columns: 1fr;
     }
+    .footer-partition{
+        text-decoration: none;
+    }
 }
+
 
 
 /* Small screen laptop  */
@@ -128,7 +132,9 @@
 
     .footer-partition {
         font-size: 14px;
+        text-decoration: none;
     }
+
 
 }
 
@@ -217,6 +223,7 @@
     }
     .container4 {
         flex-direction: column;
+    
     }
 
     .last {
@@ -243,6 +250,10 @@
         background-color: lightgray;
         grid-template-columns: repeat(1, 1fr); /* Three equal columns */
         gap: 2px;
+    }
+
+    .footer-partition{
+        text-decoration: none;
     }
 
     .copyright{

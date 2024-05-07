@@ -401,8 +401,6 @@ margin-right: 5%;
 
 .last p {
     margin-left: 10%;
-  
-
 }
 
 .container4{
@@ -457,11 +455,13 @@ margin-right: 5%;
     /* Add borders for better separation */
     border-radius: 5px; /* Add border radius for rounded corners */
     text-align: center;
+    text-decoration: none;
 
 }
 
 .footer-partition p {
     margin: 1.5%; /* Remove default margin for paragraphs */
+    
 }
 
 .copyright{
@@ -472,7 +472,6 @@ margin-right: 5%;
     text-align: center;
     color: white;
 }
-
 
 @keyframes slideText {
     0% {
