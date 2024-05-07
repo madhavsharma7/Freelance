@@ -153,7 +153,9 @@ nav a:hover {
 #main p {
     color: #6F6b6b;
     font-family: "Lato", sans-serif;
-    font-size: 14px;
+    font-size: 20px;
+margin-left: 5%;
+margin-right: 5%;
 }
 
 #header .icon {
@@ -253,12 +255,6 @@ nav a:hover {
 .dot:hover {
     background-color: #717171;
 }
-
-/* Fading animation */
-/* .fade {
-    animation-name: fade;
-    animation-duration: 1.5s;
-} */
 
 /* 4 Part image */
 #four {
@@ -372,8 +368,6 @@ nav a:hover {
     gap: 20px;
     /* Adjust spacing between grid items */
     margin-left: 50px;
-
-
 }
 
 
@@ -477,4 +471,33 @@ nav a:hover {
     align-items: center;
     text-align: center;
     color: white;
+}
+
+
+@keyframes slideText {
+    0% {
+        left: -200px;
+    }
+
+    100% {
+        left: 25%;
+    }
+
+}
+
+.text-overlay h1,
+.text-overlay h4 {
+    margin: 0;
+    color: white;
+}
+
+.text-overlay h1 {
+    font-size: 50px;
+    /* Increase font size for laptop screens */
+}
+
+.text-overlay h4 {
+    font-size: 40px;
+    /* Increase font size for laptop screens */
+
 }

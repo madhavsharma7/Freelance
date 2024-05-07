@@ -1,3 +1,4 @@
+/* Big screen laptop */
 @media screen and (max-width: 991px) {
 
     .socials {
@@ -80,14 +81,151 @@
         margin-right: 10%;
         margin-left: -60%;
         grid-template-columns: 1fr;
-        /* Show only one column on mobile */
+    }
+}
 
+
+/* Small screen laptop  */
+@media screen and (max-width: 768px) {
+    .btn {
+        width: 100px;
+        margin-left: 42%;
     }
 
 
+    #four img {
+        margin-left: 32%;
+
+    }
+
+    .content-wrapper {
+        font-size: 25px;
+        margin: 20px auto;
+        text-align: center;
+        /* justify-content: center; */
+        margin-top: 210%;
+        margin-left: -125%;
+        grid-template-columns: 1fr;
+        /* Show only one column on mobile */
+    }
+
+    #grid-container2 {
+        gap: 50px;
+    }
+
+    .last {
+        margin-top: 3%;
+    }
+
+    .last p {
+        font-size: 15px;
+
+    }
+
+    .footer {
+        gap: 12px;
+    }
+
+    .footer-partition {
+        font-size: 14px;
+    }
+
 }
 
-/* Adjustments for 991px breakpoint */
+@media screen and (max-width: 425px) {
+
+
+    .menu ul {
+        flex-direction: column;
+        position: static;
+        text-align: left;
+        font-size: 16px;
+    }
+
+    #main p {
+        font-size: 15px;
+        justify-content: center;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .btn {
+        width: 100px;
+        margin-left: 35%;
+    }
+
+
+    #four img {
+        margin-left: 36%;
+
+    }
+
+    .content-wrapper {
+        font-size: 20px;
+        margin: 20px auto;
+
+        /* justify-content: center; */
+        margin-top: 190%;
+        margin-left: -110%;
+        grid-template-columns: 1fr;
+        /* Show only one column on mobile */
+    }
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 15px;
+    /* Adjust spacing between grid items */
+    margin-left: 40px;
+}
+
+.three-part {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* Center items horizontally */
+
+}
+
+/* Style for images */
+.three-part img {
+    height: 40%;
+    /* Adjust image height as needed */
+    max-width: 100%;
+    /* Ensure images don't exceed container width */
+
+}
+
+.three-part {
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+}
+
+#grid-container2 {
+    gap: 5px;
+}
+
+.last {
+    margin-top: 3%;
+}
+
+.last p {
+    font-size: 15px;
+
+}
+
+.footer {
+    gap: 12px;
+}
+
+.footer-partition {
+    font-size: 14px;
+}
+
+
+}
+/* carousel for big screen */
 @media (max-width: 991px) {
     @keyframes slideText {
         0% {
@@ -118,37 +256,54 @@
     }
 }
 
-@keyframes slideText {
-    0% {
-        left: -210px;
+/*  Carousel at small laptop*/
+@media (max-width: 767px) {
+    @keyframes slideText {
+        0% {
+            left: -210px;
+        }
+
+        100% {
+            left: 15%;
+        }
+
     }
 
-    100% {
-        left: 30%;
+    .text-overlay h1 {
+        font-size: 35px;
+        /* Increase font size for laptop screens */
     }
 
-    /* Final position on the screen */
+    .text-overlay h4 {
+        font-size: 20px;
+        /* Increase font size for laptop screens */
+    }
 
 }
 
-.text-overlay h1,
-.text-overlay h4 {
-    margin: 0;
-    color: white;
+@media (max-width: 425px) {
+    @keyframes slideText {
+        0% {
+            left: -200px;
+        }
+
+        100% {
+            left: 15%;
+        }
+
+    }
+
+    .text-overlay h1 {
+        font-size: 22px;
+        /* Increase font size for laptop screens */
+    }
+
+    .text-overlay h4 {
+        font-size: 20px;
+        /* Increase font size for laptop screens */
+
+    }
 }
-
-.text-overlay h1 {
-    font-size: 50px;
-    /* Increase font size for laptop screens */
-}
-
-.text-overlay h4 {
-    font-size: 40px;
-    /* Increase font size for laptop screens */
-
-}
-
-/* Carousel */
 
 
 /* On smaller screens, decrease text size */
@@ -165,7 +320,5 @@
         width: 100%;
         height: 85vh;
     }
-
-
 
 }
